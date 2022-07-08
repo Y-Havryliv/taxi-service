@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+    <h1 class="list-title">
+        Manufacturer List
+    </h1>
+
+    <form action="" method="get" class="form-inline">
+        {{ search_form|crispy }}
+        <input type="submit" value="Search"
+               class="btn btn-secondary search-button">
+    </form>
+    <br>
+
+    {% if manufacturer_list %}
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+
+            {% for manufacturer in manufacturer_list %}
+                <tr>
+                    <td>
+                        {{ manufacturer.id }}
+                    </td>
+                    <td>
+                        {{ manufacturer.name }}
+                    </td>
+                    <td>
+                        {{ manufacturer.country }}
+                    </td>
+                    <td>
+                        <a href="{% url 'taxi:manufacturer-update' pk=manufacturer.id %}"><i
+                                class="fa-solid fa-file-pen"></i></a>
+                    </td>
+                    <td>
+                        <a href="{% url 'taxi:manufacturer-delete' pk=manufacturer.id %}"><i
+                                class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <button type="button" class="btn btn-warning add-button"><a
+                href="{% url 'taxi:manufacturer-create' %}"
+                class="white-anchor-tag">Add new manufacturer</a></button>
+
+    {% else %}
+        <p>There are no manufacturers matching your search.</p>
+    {% endif %}
+{% endblock %}

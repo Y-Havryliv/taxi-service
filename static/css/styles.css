@@ -1,0 +1,138 @@
+body {
+    background-image: url('../images/background.jpg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+}
+
+p, div {
+    font-family: 'Poppins', sans-serif;
+}
+
+a.black-anchor-tag {
+    color: black;
+}
+
+.add-button {
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.assign-button {
+    background-color: #6B8E23;
+    border: transparent;
+}
+
+a.white-anchor-tag {
+    color: white;
+}
+
+.delete-button {
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.delete-div {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.detail-page-link {
+    color: #307D7E;
+    font-weight: 700
+}
+
+.driver-div {
+    padding-left: 50px;
+    margin-top: 25px;
+}
+
+.fa-solid.fa-file-pen {
+    color: #6c757d;
+    margin-left: 25px;
+}
+
+.fa-solid.fa-trash {
+    color: #6c757d;
+    margin-left: 20px;
+}
+
+.home-page {
+    text-align: center;
+}
+
+.home-ul {
+    list-style-type: none;
+}
+
+.list-title {
+    display: inline-block;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    background-color: #6c757d;
+}
+
+.navbar-dark .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link.user-name {
+    font-weight: 800;
+    color: white;
+}
+
+.page-item .page-link {
+    color: white;
+    background-color: #6c757d;
+    border: transparent;
+}
+
+.page-item.active .page-link {
+    color: black;
+    background-color: #ffc107;
+    border: transparent;
+}
+
+.pagination {
+    float: right;
+    margin-right: 70px;
+}
+
+p.delete-paragraph {
+    font-weight: 800;
+}
+
+.search-button {
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.update-button {
+    margin-top: 30px;
+}
+
+.update-form {
+    margin: 30px 0;
+}
+
+.visited-p {
+    padding-top: 40px;
+}
